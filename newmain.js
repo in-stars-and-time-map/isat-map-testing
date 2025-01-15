@@ -43,42 +43,42 @@ const mapBoxes2 = {"type":"FeatureCollection","features":[
 ]};
 
 const mapBoxes3 = {"type":"FeatureCollection","features":[
-    {"type":"Feature","id":"15","properties":{"name":"TEST1"},"geometry":{"type":"Polygon","coordinates":[[[94.265625, -153.476562], [94.265625, -179.726562], [81.5, -179.726562], [81.5, -153.476562], [94.265625, -153.476562]]]}},
-    {"type":"Feature","id":"16","properties":{"name":"TEST2"},"geometry":{"type":"Polygon","coordinates":[[[93.5625, -132.398437], [93.5625, -153.429687], [82.289063, -153.429687], [82.289063, -132.398437], [93.5625, -132.398437]]]}},
-    {"type":"Feature","id":"17","properties":{"name":"TEST3"},"geometry":{"type":"Polygon","coordinates":[[[91.289063, -103.929687], [91.289063, -132.445312], [84.539063, -132.445312], [84.539063, -103.929687], [91.289063, -103.929687]]]}},
-    {"type":"Feature","id":"18","properties":{"name":"TEST4"},"geometry":{"type":"Polygon","coordinates":[[[91.28125, -87.453125], [91.28125, -103.929687], [84.546875, -103.929687], [84.546875, -87.453125], [91.28125, -87.453125]]]}},
-    {"type":"Feature","id":"19","properties":{"name":"TEST5"},"geometry":{"type":"Polygon","coordinates":[[[93.550658, -79.195492], [93.550658, -87.460937], [82.289063, -87.460937], [82.289063, -79.195492], [93.550658, -79.195492]]]}},
-    {"type":"Feature","id":"20","properties":{"name":"TEST6"},"geometry":{"type":"Polygon","coordinates":[[[82.265625, -77.703125], [82.265625, -85.929687], [72.578125, -85.929687], [72.578125, -77.703125], [82.265625, -77.703125]]]}},
-    {"type":"Feature","id":"21","properties":{"name":"TEST7"},"geometry":{"type":"Polygon","coordinates":[[[101.789063, -79.195312], [101.789063, -85.929687], [93.523438, -85.929687], [93.523438, -79.195312], [101.789063, -79.195312]]]}},
-    {"type":"Feature","id":"22","properties":{"name":"TEST8"},"geometry":{"type":"Polygon","coordinates":[[[91.289063, -62.859375], [91.289063, -79.210937], [84.53125, -79.210937], [84.53125, -62.859375], [91.289063, -62.859375]]]}}
+    {"type":"Feature","id":"15","properties":{"name":"Castle Entrance"},"geometry":{"type":"Polygon","coordinates":[[[94.265625, -153.476562], [94.265625, -179.726562], [81.5, -179.726562], [81.5, -153.476562], [94.265625, -153.476562]]]}},
+    {"type":"Feature","id":"16","properties":{"name":"Entrance"},"geometry":{"type":"Polygon","coordinates":[[[93.5625, -132.398437], [93.5625, -153.429687], [82.289063, -153.429687], [82.289063, -132.398437], [93.5625, -132.398437]]]}},
+    {"type":"Feature","id":"17","properties":{"name":"TutoMonsterHallway"},"geometry":{"type":"Polygon","coordinates":[[[91.289063, -103.929687], [91.289063, -132.445312], [84.539063, -132.445312], [84.539063, -103.929687], [91.289063, -103.929687]]]}},
+    {"type":"Feature","id":"18","properties":{"name":"MonsterHallway"},"geometry":{"type":"Polygon","coordinates":[[[91.28125, -87.453125], [91.28125, -103.929687], [84.546875, -103.929687], [84.546875, -87.453125], [91.28125, -87.453125]]]}},
+    {"type":"Feature","id":"19","properties":{"name":"FLOOR 1, START"},"geometry":{"type":"Polygon","coordinates":[[[93.550658, -79.195492], [93.550658, -87.460937], [82.289063, -87.460937], [82.289063, -79.195492], [93.550658, -79.195492]]]}},
+    {"type":"Feature","id":"20","properties":{"name":"StorageRoom"},"geometry":{"type":"Polygon","coordinates":[[[82.265625, -77.703125], [82.265625, -85.929687], [72.578125, -85.929687], [72.578125, -77.703125], [82.265625, -77.703125]]]}},
+    {"type":"Feature","id":"21","properties":{"name":"KeyRoom (Key 0-0)"},"geometry":{"type":"Polygon","coordinates":[[[101.789063, -79.195312], [101.789063, -85.929687], [93.523438, -85.929687], [93.523438, -79.195312], [101.789063, -79.195312]]]}},
+    {"type":"Feature","id":"22","properties":{"name":"DeathCorridor"},"geometry":{"type":"Polygon","coordinates":[[[91.289063, -62.859375], [91.289063, -79.210937], [84.53125, -79.210937], [84.53125, -62.859375], [91.289063, -62.859375]]]}}
     //{"type":"Feature","id":"14","properties":{"name":"House_Storage"},"geometry":{"type":"Polygon","coordinates": }},[[[95.015625, -47.859375], [95.015625, -62.859375], [80.773438, -62.859375], [80.773438, -47.859375], [95.015625, -47.859375]]]
 ]};
 
 const mapBoxes4 = {"type":"FeatureCollection","features":[
-    {"type":"Feature","id":"15","properties":{"name":"TEST1"},"geometry":{"type":"Polygon","coordinates":[[[94.265625, -153.476562], [94.265625, -179.726562], [81.5, -179.726562], [81.5, -153.476562], [94.265625, -153.476562]]]}},
-    {"type":"Feature","id":"16","properties":{"name":"TEST2"},"geometry":{"type":"Polygon","coordinates":[[[93.5625, -132.398437], [93.5625, -153.429687], [82.289063, -153.429687], [82.289063, -132.398437], [93.5625, -132.398437]]]}},
-    {"type":"Feature","id":"17","properties":{"name":"TEST3"},"geometry":{"type":"Polygon","coordinates":[[[91.289063, -103.929687], [91.289063, -132.445312], [84.539063, -132.445312], [84.539063, -103.929687], [91.289063, -103.929687]]]}},
-    {"type":"Feature","id":"18","properties":{"name":"TEST4"},"geometry":{"type":"Polygon","coordinates":[[[91.28125, -87.453125], [91.28125, -103.929687], [84.546875, -103.929687], [84.546875, -87.453125], [91.28125, -87.453125]]]}},
-    {"type":"Feature","id":"19","properties":{"name":"TEST5"},"geometry":{"type":"Polygon","coordinates":[[[93.550658, -79.195492], [93.550658, -87.460937], [82.289063, -87.460937], [82.289063, -79.195492], [93.550658, -79.195492]]]}},
-    {"type":"Feature","id":"20","properties":{"name":"TEST6"},"geometry":{"type":"Polygon","coordinates":[[[82.265625, -77.703125], [82.265625, -85.929687], [72.578125, -85.929687], [72.578125, -77.703125], [82.265625, -77.703125]]]}},
-    {"type":"Feature","id":"21","properties":{"name":"TEST7"},"geometry":{"type":"Polygon","coordinates":[[[101.789063, -79.195312], [101.789063, -85.929687], [93.523438, -85.929687], [93.523438, -79.195312], [101.789063, -79.195312]]]}},
-    {"type":"Feature","id":"22","properties":{"name":"TEST8"},"geometry":{"type":"Polygon","coordinates":[[[91.289063, -62.859375], [91.289063, -79.210937], [84.53125, -79.210937], [84.53125, -62.859375], [91.289063, -62.859375]]]}},
-    {"type":"Feature","id":"23","properties":{"name":"TEST9"},"geometry":{"type":"Polygon","coordinates":[[[95.015625, -47.859375], [95.015625, -62.859375], [80.773438, -62.859375], [80.773438, -47.859375], [95.015625, -47.859375]]]}},
-    {"type":"Feature","id":"24","properties":{"name":"TEST10"},"geometry":{"type":"Polygon","coordinates":[[[105.507813, -38.132812], [105.507813, -61.359375], [95.023438, -61.359375], [95.023438, -38.132812], [105.507813, -38.132812]]]}},
-    {"type":"Feature","id":"25","properties":{"name":"TEST11"},"geometry":{"type":"Polygon","coordinates":[[[137.023438, -38.125], [137.023438, -44.125], [105.53125, -44.125], [105.53125, -38.125], [137.023438, -38.125]]]}},
-    {"type":"Feature","id":"26","properties":{"name":"TEST12"},"geometry":{"type":"Polygon","coordinates":[[[113.773438, -30.609375], [113.773438, -38.101562], [105.53125, -38.101562], [105.53125, -30.609375], [113.773438, -30.609375]]]}},
-    {"type":"Feature","id":"27","properties":{"name":"TEST13"},"geometry":{"type":"Polygon","coordinates":[[[137.773438, -30.617187], [137.773438, -38.109375], [129.546875, -38.109375], [129.546875, -30.617187], [137.773438, -30.617187]]]}},
-    {"type":"Feature","id":"28","properties":{"name":"TEST14"},"geometry":{"type":"Polygon","coordinates":[[[162.539063, -38.125], [162.539063, -56.875992], [137.039063, -56.875992], [137.039063, -38.125], [162.539063, -38.125]]]}},
-    {"type":"Feature","id":"29","properties":{"name":"TEST15"},"geometry":{"type":"Polygon","coordinates":[[[169.273438, -37.34375], [169.273438, -44.882812], [162.515625, -44.882812], [162.515625, -37.34375], [169.273438, -37.34375]]]}},
-    {"type":"Feature","id":"30","properties":{"name":"TEST16"},"geometry":{"type":"Polygon","coordinates":[[[155.023438, -56.851562], [155.023438, -63.617187], [146.765625, -63.617187], [146.765625, -56.851562], [155.023438, -56.851562]]]}},
-    {"type":"Feature","id":"31","properties":{"name":"TEST17"},"geometry":{"type":"Polygon","coordinates":[[[80.773438, -54.617187], [80.773438, -60.609375], [56.78125, -60.609375], [56.78125, -54.617187], [80.773438, -54.617187]]]}},
-    {"type":"Feature","id":"32","properties":{"name":"TEST18"},"geometry":{"type":"Polygon","coordinates":[[[74.007813, -47.125], [74.007813, -54.632812], [65.78125, -54.632812], [65.78125, -47.125], [74.007813, -47.125]]]}},
-    {"type":"Feature","id":"33","properties":{"name":"TEST19"},"geometry":{"type":"Polygon","coordinates":[[[56.751518, -35.143829], [56.751518, -61.359375], [46.28125, -61.359375], [46.28125, -35.143829], [56.751518, -35.143829]]]}},
-    {"type":"Feature","id":"34","properties":{"name":"TEMP20"},"geometry":{"type":"Polygon","coordinates":[[[41.056759, -21.644773], [41.056759, -35.132812], [46.257813, -35.132812], [46.257813, -41.109375], [32.870108, -41.109375], [32.870108, -21.644773], [41.056759, -21.644773]]]}},
-    {"type":"Feature","id":"35","properties":{"name":"TEST21"},"geometry":{"type":"Polygon","coordinates":[[[32.788313, -20.115467], [32.788313, -27.625], [24.5625, -27.625], [24.5625, -20.115467], [32.788313, -20.115467]]]}},
-    {"type":"Feature","id":"36","properties":{"name":"TEST22"},"geometry":{"type":"Polygon","coordinates":[[[50.804688, -21.617187], [50.804688, -28.367187], [41.0625, -28.367187], [41.0625, -21.617187], [50.804688, -21.617187]]]}},
-    {"type":"Feature","id":"37","properties":{"name":"TEST23"},"geometry":{"type":"Polygon","coordinates":[[[91.265625, -24.617187], [91.265625, -47.867187], [84.53125, -47.867187], [84.53125, -24.617187], [91.265625, -24.617187]]]}},
-    {"type":"Feature","id":"38","properties":{"name":"Test24"},"geometry":{"type":"Polygon","coordinates":[[[90.492188, -1.367187], [90.492188, -24.640625], [80.023438, -24.640625], [80.023438, -1.367187], [90.492188, -1.367187]]]}}
+    {"type":"Feature","id":"15","properties":{"name":"Castle Entrance"},"geometry":{"type":"Polygon","coordinates":[[[94.265625, -153.476562], [94.265625, -179.726562], [81.5, -179.726562], [81.5, -153.476562], [94.265625, -153.476562]]]}},
+    {"type":"Feature","id":"16","properties":{"name":"Entrance"},"geometry":{"type":"Polygon","coordinates":[[[93.5625, -132.398437], [93.5625, -153.429687], [82.289063, -153.429687], [82.289063, -132.398437], [93.5625, -132.398437]]]}},
+    {"type":"Feature","id":"17","properties":{"name":"TutoMonsterHallway"},"geometry":{"type":"Polygon","coordinates":[[[91.289063, -103.929687], [91.289063, -132.445312], [84.539063, -132.445312], [84.539063, -103.929687], [91.289063, -103.929687]]]}},
+    {"type":"Feature","id":"18","properties":{"name":"MonsterHallway"},"geometry":{"type":"Polygon","coordinates":[[[91.28125, -87.453125], [91.28125, -103.929687], [84.546875, -103.929687], [84.546875, -87.453125], [91.28125, -87.453125]]]}},
+    {"type":"Feature","id":"19","properties":{"name":"FLOOR 1, START"},"geometry":{"type":"Polygon","coordinates":[[[93.550658, -79.195492], [93.550658, -87.460937], [82.289063, -87.460937], [82.289063, -79.195492], [93.550658, -79.195492]]]}},
+    {"type":"Feature","id":"20","properties":{"name":"StorageRoom"},"geometry":{"type":"Polygon","coordinates":[[[82.265625, -77.703125], [82.265625, -85.929687], [72.578125, -85.929687], [72.578125, -77.703125], [82.265625, -77.703125]]]}},
+    {"type":"Feature","id":"21","properties":{"name":"KeyRoom (Key 0-0)"},"geometry":{"type":"Polygon","coordinates":[[[101.789063, -79.195312], [101.789063, -85.929687], [93.523438, -85.929687], [93.523438, -79.195312], [101.789063, -79.195312]]]}},
+    {"type":"Feature","id":"22","properties":{"name":"DeathCorridor"},"geometry":{"type":"Polygon","coordinates":[[[91.289063, -62.859375], [91.289063, -79.210937], [84.53125, -79.210937], [84.53125, -62.859375], [91.289063, -62.859375]]]}},
+    {"type":"Feature","id":"23","properties":{"name":"FLOOR 1, END"},"geometry":{"type":"Polygon","coordinates":[[[95.015625, -47.859375], [95.015625, -62.859375], [80.773438, -62.859375], [80.773438, -47.859375], [95.015625, -47.859375]]]}},
+    {"type":"Feature","id":"24","properties":{"name":"Hallway (LVL difference)"},"geometry":{"type":"Polygon","coordinates":[[[105.507813, -38.132812], [105.507813, -61.359375], [95.023438, -61.359375], [95.023438, -38.132812], [105.507813, -38.132812]]]}},
+    {"type":"Feature","id":"25","properties":{"name":"Hallway (Tear)"},"geometry":{"type":"Polygon","coordinates":[[[137.023438, -38.125], [137.023438, -44.125], [105.53125, -44.125], [105.53125, -38.125], [137.023438, -38.125]]]}},
+    {"type":"Feature","id":"26","properties":{"name":"BreakRoom"},"geometry":{"type":"Polygon","coordinates":[[[113.773438, -30.609375], [113.773438, -38.101562], [105.53125, -38.101562], [105.53125, -30.609375], [113.773438, -30.609375]]]}},
+    {"type":"Feature","id":"27","properties":{"name":"Storage Room (Locked)"},"geometry":{"type":"Polygon","coordinates":[[[137.773438, -30.617187], [137.773438, -38.109375], [129.546875, -38.109375], [129.546875, -30.617187], [137.773438, -30.617187]]]}},
+    {"type":"Feature","id":"28","properties":{"name":"Hallway (RowTears)"},"geometry":{"type":"Polygon","coordinates":[[[162.539063, -38.125], [162.539063, -56.875992], [137.039063, -56.875992], [137.039063, -38.125], [162.539063, -38.125]]]}},
+    {"type":"Feature","id":"29","properties":{"name":"Room (Crest)"},"geometry":{"type":"Polygon","coordinates":[[[169.273438, -37.34375], [169.273438, -44.882812], [162.515625, -44.882812], [162.515625, -37.34375], [169.273438, -37.34375]]]}},
+    {"type":"Feature","id":"30","properties":{"name":"Kitchen (Key 1-1)"},"geometry":{"type":"Polygon","coordinates":[[[155.023438, -56.851562], [155.023438, -63.617187], [146.765625, -63.617187], [146.765625, -56.851562], [155.023438, -56.851562]]]}},
+    {"type":"Feature","id":"31","properties":{"name":"Hallway (Locked 1-1)"},"geometry":{"type":"Polygon","coordinates":[[[80.773438, -54.617187], [80.773438, -60.609375], [56.78125, -60.609375], [56.78125, -54.617187], [80.773438, -54.617187]]]}},
+    {"type":"Feature","id":"32","properties":{"name":"Armory"},"geometry":{"type":"Polygon","coordinates":[[[74.007813, -47.125], [74.007813, -54.632812], [65.78125, -54.632812], [65.78125, -47.125], [74.007813, -47.125]]]}},
+    {"type":"Feature","id":"33","properties":{"name":"Hallway (Ghost1)"},"geometry":{"type":"Polygon","coordinates":[[[56.751518, -35.143829], [56.751518, -61.359375], [46.28125, -61.359375], [46.28125, -35.143829], [56.751518, -35.143829]]]}},
+    {"type":"Feature","id":"34","properties":{"name":"Hallway"},"geometry":{"type":"Polygon","coordinates":[[[41.056759, -21.644773], [41.056759, -35.132812], [46.257813, -35.132812], [46.257813, -41.109375], [32.870108, -41.109375], [32.870108, -21.644773], [41.056759, -21.644773]]]}},
+    {"type":"Feature","id":"35","properties":{"name":"CandleDorm (Timecraft)"},"geometry":{"type":"Polygon","coordinates":[[[32.788313, -20.115467], [32.788313, -27.625], [24.5625, -27.625], [24.5625, -20.115467], [32.788313, -20.115467]]]}},
+    {"type":"Feature","id":"36","properties":{"name":"WritingDorm (Key 1-2F)"},"geometry":{"type":"Polygon","coordinates":[[[50.804688, -21.617187], [50.804688, -28.367187], [41.0625, -28.367187], [41.0625, -21.617187], [50.804688, -21.617187]]]}},
+    {"type":"Feature","id":"37","properties":{"name":"BossHallway_1"},"geometry":{"type":"Polygon","coordinates":[[[91.265625, -24.617187], [91.265625, -47.867187], [84.53125, -47.867187], [84.53125, -24.617187], [91.265625, -24.617187]]]}},
+    {"type":"Feature","id":"38","properties":{"name":"Hallway"},"geometry":{"type":"Polygon","coordinates":[[[90.492188, -1.367187], [90.492188, -24.640625], [80.023438, -24.640625], [80.023438, -1.367187], [90.492188, -1.367187]]]}}
     //{"type":"Feature","id":"38","properties":{"name":"Test24"},"geometry":{"type":"Polygon","coordinates":[[[90.492188, -1.367187], [90.492188, -24.640625], [80.023438, -24.640625], [80.023438, -1.367187], [90.492188, -1.367187]]]}},
 ]};
 
@@ -129,6 +129,7 @@ function resetHighlight(e) {
 
 function zoomToRoom(e) {
     map.fitBounds(e.target.getBounds().pad(0.1));
+    //window.open(e.target.feature.id);
 }
 
 function onEachFeature(feature, layer) {
@@ -218,10 +219,16 @@ var overlayMapsACT1House = {
 
 var layerControl = L.control.layers(baseLayers, overlayMaps, { collapsed: false }).addTo(map);
 
+//urlMapSet = '';
+let url = new URL("https://in-stars-and-time-map.github.io/isat-map-testing/");
+let params = new URLSearchParams(url.search);
 
 function onOverlayAdd(e){
     if (map.hasLayer(dor_in)) {
+        //urlMapSet = 'Dor_in';
+        params.append("map", "Dor_in");
         lowerOpacity();
+        poi.removeFrom(map);
         if (map.hasLayer(boxFunctions)) {
             boxFunctions.removeFrom(map);
             boxFunctions = boxCalc(mapBoxes2);
@@ -244,7 +251,9 @@ function onOverlayAdd(e){
         }
     } 
     if (map.hasLayer(dor_out)) {
+        urlMapSet = 'Dor_out'
         raiseOpacity();
+        poi.removeFrom(map);
         if (map.hasLayer(boxFunctions)) {
             boxFunctions.removeFrom(map);
             boxFunctions = boxCalc(mapBoxes);
@@ -318,6 +327,15 @@ function onOverlayAdd(e){
 }
 //setting default map to dor outside act1 
 dor_out.addTo(map);
+map.on('draw:created', function(e){
+    var type = e.layerType,
+        layer = e.layer;
 
+    layer.on('click', function(){
+       window.open('http://www.example.com','_blank');
+    });  
+
+    drawnItems.addLayer(layer);
+});  
 map.on('click', onMapClick);
 map.on('baselayerchange', onOverlayAdd);
