@@ -3,6 +3,8 @@
     <head>
     <meta charset="utf-8">
     <title>ACT1 DORMONT</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" ></script>
     <link rel="stylesheet" href="./newstyle.css" />
@@ -27,7 +29,22 @@
     </style>
     </head>
     <body>
+        <dialog id="myDialog">
+            <h2>Huuuuge WIP (and ISAT spoilers)</h2>
+            <p>ISAT interactive maps contain spoilers for <a href="https://store.steampowered.com/app/1677310/In_Stars_And_Time/">In Stars and Time.</a> (duh) <br>They also are *really* rough and constantly being changed.  <br>This is your fair warning!</p>
+            <div id="popuptext">
+            <label>
+                <input type="checkbox" id="do-not-show-again"> Yeah, yeah, I got it. (Don't show again)
+            </label>
+            <br>
+            <br>
+            
+            <button id="close-popup" onclick="myDialog.close()">Close</button>
+            </div>
+        </dialog>
+        <script src="./alertbox.js"></script>
         <div id="myMap" style="width:100%;height:100%"></div>
+        <script src="./rooms.js"></script>
         <script src="./newmain.js"></script>
     </body>
 </html>
