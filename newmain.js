@@ -41,6 +41,8 @@ var dor_in = L.tileLayer("https://raw.githubusercontent.com/in-stars-and-time-ma
 var dor_out = L.tileLayer("https://raw.githubusercontent.com/in-stars-and-time-map/tiles/refs/heads/main/Act1/Dor_outside/{z}/{x}/{y}.png", tile);
 var house_one = L.tileLayer("https://raw.githubusercontent.com/in-stars-and-time-map/tiles/refs/heads/main/Act1/Floor1/{z}/{x}/{y}.png", tile);
 var house_one_act2 = L.tileLayer("https://raw.githubusercontent.com/in-stars-and-time-map/tiles/refs/heads/main/Act2-4/Floor1/{z}/{x}/{y}.png", tile);
+var house_two_act2 = L.tileLayer("https://raw.githubusercontent.com/in-stars-and-time-map/tiles/refs/heads/main/Act2-4/Floor2/{z}/{x}/{y}.png", tile);
+var house_three_act2 = L.tileLayer("https://raw.githubusercontent.com/in-stars-and-time-map/tiles/refs/heads/main/Act2-4/Floor3/{z}/{x}/{y}.png", tile);
 
 //set style for mapBoxes, have all these properies aaaand
 function style() {
@@ -147,7 +149,9 @@ var baseLayers = {
     "Dormont (Outside)": dor_out,
     "Dormont (Inside)": dor_in,
     "House of Change (Floor 1 ACT1)": house_one,
-    "House of Change (Floor 1 ACT2+)": house_one_act2
+    "House of Change (Floor 1 ACT2+)": house_one_act2,
+    "House of Change (Floor 2 ACT2+)": house_two_act2,
+    "House of Change (Floor 3 ACT2+)": house_three_act2
 };
 
 var overlayMaps = {
