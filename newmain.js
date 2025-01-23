@@ -166,12 +166,23 @@ var overlayMapsACT1House = {
 
 var layerControl = L.control.layers(baseLayers, overlayMaps, { collapsed: false }).addTo(map);
 
-function resetMapView(BoxVar){
+function resetMapViewToCastle(BoxVar){
     boxFunctions.removeFrom(map);
     boxFunctions = boxCalc(BoxVar);
     var overlayMaps = {
         "Rooms": boxFunctions,
         "Points of Interest": poi,
+    };
+    layerControl.remove(map);
+    layerControl = L.control.layers(baseLayers, overlayMaps, { collapsed: false }).addTo(map);
+}
+
+function resetMapViewToDormont(BoxVar){
+    boxFunctions.removeFrom(map);
+    boxFunctions = boxCalc(BoxVar);
+    var overlayMaps = {
+        "Rooms": boxFunctions,
+        "Main Characters": main_chara,
     };
     layerControl.remove(map);
     layerControl = L.control.layers(baseLayers, overlayMaps, { collapsed: false }).addTo(map);
@@ -188,24 +199,11 @@ function onOverlayAdd(e){
         lowerOpacity();
         poi.removeFrom(map);
         if (map.hasLayer(boxFunctions)) {
-            boxFunctions.removeFrom(map);
-            boxFunctions = boxCalc(mapBoxes2);
-            var overlayMaps = {
-                "Rooms for Dor IN 1": boxFunctions,
-                "Main Characters": main_chara,
-            };
-            layerControl.remove(map);
-            layerControl = L.control.layers(baseLayers, overlayMaps, { collapsed: false }).addTo(map);
+            resetMapViewToDormont(mapBoxes2);
             boxFunctions.addTo(map);
-        } else {
-            boxFunctions.removeFrom(map);
-            boxFunctions = boxCalc(mapBoxes2);
-            var overlayMaps = {
-                "Rooms for Dor IN 2": boxFunctions,
-                "Main Characters": main_chara,
-            };
-            layerControl.remove(map);
-            layerControl = L.control.layers(baseLayers, overlayMaps, { collapsed: false }).addTo(map);
+        } 
+        else {
+            resetMapViewToDormont(mapBoxes2);    
         }
     } 
     if (map.hasLayer(dor_out)) {
@@ -213,24 +211,11 @@ function onOverlayAdd(e){
         raiseOpacity();
         poi.removeFrom(map);
         if (map.hasLayer(boxFunctions)) {
-            boxFunctions.removeFrom(map);
-            boxFunctions = boxCalc(mapBoxes);
-            var overlayMaps = {
-                "Rooms for Dor OUT 1": boxFunctions,
-                "Main Characters": main_chara,
-            };
-            layerControl.remove(map);
-            layerControl = L.control.layers(baseLayers, overlayMaps, { collapsed: false }).addTo(map);
+            resetMapViewToDormont(mapBoxes);
             boxFunctions.addTo(map);
-        } else {
-            boxFunctions.removeFrom(map);
-            boxFunctions = boxCalc(mapBoxes);
-            var overlayMaps = {
-                "Rooms for Dor OUT 2": boxFunctions,
-                "Main Characters": main_chara,
-            };
-            layerControl.remove(map);
-            layerControl = L.control.layers(baseLayers, overlayMaps, { collapsed: false }).addTo(map);
+        } 
+        else {
+            resetMapViewToDormont(mapBoxes);
         }
         //layerControl.remove(map);
         //layerControl = L.control.layers(baseLayersACT1, overlayMaps, { collapsed: false }).addTo(map);
@@ -240,30 +225,30 @@ function onOverlayAdd(e){
         layerControl.removeLayer(main_chara);
         main_chara.removeFrom(map);
         if (map.hasLayer(boxFunctions)) {
-            resetMapView(mapBoxes3);
+            resetMapViewToCastle(mapBoxes3);
             boxFunctions.addTo(map);
         } else {
-            resetMapView(mapBoxes3);
+            resetMapViewToCastle(mapBoxes3);
         }
     } 
     if (map.hasLayer(house_one_act2)) {
         layerControl.removeLayer(main_chara);
         main_chara.removeFrom(map);
         if (map.hasLayer(boxFunctions)) {
-            resetMapView(mapBoxes4);
+            resetMapViewToCastle(mapBoxes4);
             boxFunctions.addTo(map);
         } else {
-            resetMapView(mapBoxes4);
+            resetMapViewToCastle(mapBoxes4);
         }
     } 
     if (map.hasLayer(house_two_act2)) {
         layerControl.removeLayer(main_chara);
         main_chara.removeFrom(map);
         if (map.hasLayer(boxFunctions)) {
-            resetMapView(mapBoxes5);
+            resetMapViewToCastle(mapBoxes5);
             boxFunctions.addTo(map);
         } else {
-            resetMapView(mapBoxes5);
+            resetMapViewToCastle(mapBoxes5);
         }
     } 
 }
