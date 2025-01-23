@@ -166,6 +166,17 @@ var overlayMapsACT1House = {
 
 var layerControl = L.control.layers(baseLayers, overlayMaps, { collapsed: false }).addTo(map);
 
+function resetMapView(BoxVar){
+    boxFunctions.removeFrom(map);
+    boxFunctions = boxCalc(BoxVar);
+    var overlayMaps = {
+        "Rooms": boxFunctions,
+        "Points of Interest": poi,
+    };
+    layerControl.remove(map);
+    layerControl = L.control.layers(baseLayers, overlayMaps, { collapsed: false }).addTo(map);
+}
+
 //urlMapSet = '';
 let url = new URL("https://in-stars-and-time-map.github.io/isat-map-testing/");
 let params = new URLSearchParams(url.search);
@@ -229,46 +240,30 @@ function onOverlayAdd(e){
         layerControl.removeLayer(main_chara);
         main_chara.removeFrom(map);
         if (map.hasLayer(boxFunctions)) {
-            boxFunctions.removeFrom(map);
-            boxFunctions = boxCalc(mapBoxes3);
-            var overlayMaps = {
-                "Rooms": boxFunctions,
-                "Points of Interest": poi,
-            };
-            layerControl.remove(map);
-            layerControl = L.control.layers(baseLayers, overlayMaps, { collapsed: false }).addTo(map);
+            resetMapView(mapBoxes3);
             boxFunctions.addTo(map);
         } else {
-            boxFunctions = boxCalc(mapBoxes3);
-            var overlayMaps = {
-                "Rooms": boxFunctions,
-                "Points of Interest": poi,
-            };
-            layerControl.remove(map);
-            layerControl = L.control.layers(baseLayers, overlayMaps, { collapsed: false }).addTo(map);
+            resetMapView(mapBoxes3);
         }
     } 
     if (map.hasLayer(house_one_act2)) {
         layerControl.removeLayer(main_chara);
         main_chara.removeFrom(map);
         if (map.hasLayer(boxFunctions)) {
-            boxFunctions.removeFrom(map);
-            boxFunctions = boxCalc(mapBoxes4);
-            var overlayMaps = {
-                "Rooms": boxFunctions,
-                "Points of Interest": poi,
-            };
-            layerControl.remove(map);
-            layerControl = L.control.layers(baseLayers, overlayMaps, { collapsed: false }).addTo(map);
+            resetMapView(mapBoxes4);
             boxFunctions.addTo(map);
         } else {
-            boxFunctions = boxCalc(mapBoxes4);
-            var overlayMaps = {
-                "Rooms": boxFunctions,
-                "Points of Interest": poi,
-            };
-            layerControl.remove(map);
-            layerControl = L.control.layers(baseLayers, overlayMaps, { collapsed: false }).addTo(map);
+            resetMapView(mapBoxes4);
+        }
+    } 
+    if (map.hasLayer(house_two_act2)) {
+        layerControl.removeLayer(main_chara);
+        main_chara.removeFrom(map);
+        if (map.hasLayer(boxFunctions)) {
+            resetMapView(mapBoxes5);
+            boxFunctions.addTo(map);
+        } else {
+            resetMapView(mapBoxes5);
         }
     } 
 }
