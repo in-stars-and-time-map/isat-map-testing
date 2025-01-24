@@ -43,6 +43,8 @@ var house_one = L.tileLayer("https://raw.githubusercontent.com/in-stars-and-time
 var house_one_act2 = L.tileLayer("https://raw.githubusercontent.com/in-stars-and-time-map/tiles/refs/heads/main/Act2-4/Floor1/{z}/{x}/{y}.png", tile);
 var house_two_act2 = L.tileLayer("https://raw.githubusercontent.com/in-stars-and-time-map/tiles/refs/heads/main/Act2-4/Floor2/{z}/{x}/{y}.png", tile);
 var house_three_act2 = L.tileLayer("https://raw.githubusercontent.com/in-stars-and-time-map/tiles/refs/heads/main/Act2-4/Floor3/{z}/{x}/{y}.png", tile);
+var house_king_act2 = L.tileLayer("https://raw.githubusercontent.com/in-stars-and-time-map/tiles/refs/heads/main/Act2-4/King/{z}/{x}/{y}.png", tile);
+var house_top_act2 = L.tileLayer("https://raw.githubusercontent.com/in-stars-and-time-map/tiles/refs/heads/main/Act2-4/Top/{z}/{x}/{y}.png", tile);
 
 //set style for mapBoxes, have all these properies aaaand
 function style() {
@@ -151,7 +153,9 @@ var baseLayers = {
     "House of Change (Floor 1 ACT1)": house_one,
     "House of Change (Floor 1 ACT2+)": house_one_act2,
     "House of Change (Floor 2 ACT2+)": house_two_act2,
-    "House of Change (Floor 3 ACT2+)": house_three_act2
+    "House of Change (Floor 3 ACT2+)": house_three_act2,
+    "House of Change (King ACT2+)": house_king_act2,
+    "House of Change (Top ACT2+)": house_top_act2
 };
 
 var overlayMaps = {
@@ -251,6 +255,36 @@ function onOverlayAdd(e){
             resetMapViewToCastle(mapBoxes5);
         }
     } 
+    if (map.hasLayer(house_three_act2)) {
+        layerControl.removeLayer(main_chara);
+        main_chara.removeFrom(map);
+        if (map.hasLayer(boxFunctions)) {
+            resetMapViewToCastle(mapBoxes6);
+            boxFunctions.addTo(map);
+        } else {
+            resetMapViewToCastle(mapBoxes6);
+        }
+    } 
+    if (map.hasLayer(house_king_act2)) {
+        layerControl.removeLayer(main_chara);
+        main_chara.removeFrom(map);
+        if (map.hasLayer(boxFunctions)) {
+            resetMapViewToCastle(mapBoxes7);
+            boxFunctions.addTo(map);
+        } else {
+            resetMapViewToCastle(mapBoxes7);
+        }
+    } 
+    if (map.hasLayer(house_top_act2)) {
+        layerControl.removeLayer(main_chara);
+        main_chara.removeFrom(map);
+        if (map.hasLayer(boxFunctions)) {
+            resetMapViewToCastle(mapBoxes8);
+            boxFunctions.addTo(map);
+        } else {
+            resetMapViewToCastle(mapBoxes8);
+        }
+    }
 }
 //setting default map to dor outside act1 
 dor_out.addTo(map);

@@ -75,3 +75,18 @@ const mapBoxes5 = {"type":"FeatureCollection","features":[
     {"type":"Feature","id":"51","properties":{"name":"Hallway (Ghost2)"},"geometry":{"type":"Polygon","coordinates":[[[112.695313, -94.96875], [112.695313, -115.945312], [94.71875, -115.945312], [94.71875, -94.96875], [112.695313, -94.96875]]]}}
     //{"type":"Feature","id":"38","properties":{"name":"Test24"},"geometry":{"type":"Polygon","coordinates":[[[90.492188, -1.367187], [90.492188, -24.640625], [80.023438, -24.640625], [80.023438, -1.367187], [90.492188, -1.367187]]]}},
 ]};
+
+const mapBoxes6 = {"type":"FeatureCollection","features":[
+    {"type":"Feature","id":"56","properties":{"name":"FILLER"},"geometry":{"type":"Polygon","coordinates":[[[93.210938, -125.71875], [93.210938, -133.984375], [81.976563, -133.984375], [81.976563, -125.71875], [93.210938, -125.71875]]]}}
+    //{"type":"Feature","id":"38","properties":{"name":"Test24"},"geometry":{"type":"Polygon","coordinates":[[[90.492188, -1.367187], [90.492188, -24.640625], [80.023438, -24.640625], [80.023438, -1.367187], [90.492188, -1.367187]]]}},
+]};
+
+const mapBoxes7 = {"type":"FeatureCollection","features":[
+    {"type":"Feature","id":"89","properties":{"name":"FILLER2"},"geometry":{"type":"Polygon","coordinates":[[[93.210938, -125.71875], [93.210938, -133.984375], [81.976563, -133.984375], [81.976563, -125.71875], [93.210938, -125.71875]]]}}
+    //{"type":"Feature","id":"38","properties":{"name":"Test24"},"geometry":{"type":"Polygon","coordinates":[[[90.492188, -1.367187], [90.492188, -24.640625], [80.023438, -24.640625], [80.023438, -1.367187], [90.492188, -1.367187]]]}},
+]};
+
+const mapBoxes8 = {"type":"FeatureCollection","features":[
+    {"type":"Feature","id":"100","properties":{"name":"FILLER3"},"geometry":{"type":"Polygon","coordinates":[[[93.210938, -125.71875], [93.210938, -133.984375], [81.976563, -133.984375], [81.976563, -125.71875], [93.210938, -125.71875]]]}}
+    //{"type":"Feature","id":"38","properties":{"name":"Test24"},"geometry":{"type":"Polygon","coordinates":[[[90.492188, -1.367187], [90.492188, -24.640625], [80.023438, -24.640625], [80.023438, -1.367187], [90.492188, -1.367187]]]}},
+]};
